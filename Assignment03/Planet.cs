@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment03
 {
-    class Abstract_Planet
+    abstract class Planet
     {
         //Private Varibles 
         private double _diameter;
@@ -85,7 +85,7 @@ namespace Assignment03
         }
 
         //Constructor Method
-        public Abstract_Planet(string name, double diameter, double mass)
+        public Planet(string name, double diameter, double mass)
         {
             this._name = name;
             this._mass = mass;
