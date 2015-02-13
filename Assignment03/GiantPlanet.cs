@@ -18,5 +18,34 @@ namespace Assignment03
 
         }
 
+        //Public Method
+        public bool HasMoons()
+        {
+           bool moon;
+            
+            if (MoonCount >0)
+            {
+                moon = true;
+            }
+            else 
+            {
+                moon = false;
+            }
+            return moon;
+        }
+
+        public bool HasRings()
+        {
+            bool rings;
+            if (RingCount > 0)
+            {
+                rings = true;
+            }
+            else
+            {
+                rings = false;
+            }
+            return rings;
+        }
     }
 }
