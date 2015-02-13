@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment03
 {
-    class Astract_Planet
+    class Abstract_Planet
     {
         //Private Varibles 
         private double _diameter;
@@ -82,6 +82,19 @@ namespace Assignment03
             {
                 return this._name;
             }
+        }
+
+        //Constructor Method
+        public Abstract_Planet(string name, double diameter, double mass)
+        {
+            this._name = name;
+            this._mass = mass;
+            this._diameter = diameter;
+        }
+
+        public override string ToString()
+        {
+            return this.Name + " has the diameter of " + this.Diameter + " kilometers and a mass of " + this.Mass + " tonnes.";
         }
     }
 }
